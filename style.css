@@ -60,6 +60,16 @@ header .icon{
     display: none;
 }
 
+h1{
+    text-align: center;
+    background-color: aquamarine;
+    color: rgb(51, 101, 1);
+}
+
+/* Fin page web */
+
+/* Configuration mode responsive */
+
 @media (max-width: 600px){
     header > a,
     header button{
@@ -122,11 +132,5 @@ header .icon{
         box-sizing: border-box;
         color: black; */
     }
-
-    
-
- 
-    
-   
 
 }
