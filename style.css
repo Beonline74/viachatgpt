@@ -82,7 +82,7 @@ p{
 #scroll_to_top{
     position: fixed;
     width: 25px;
-    bottom: 50px;
+    bottom: 100px;
     right: 30px;
 }
 
