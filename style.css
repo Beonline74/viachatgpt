@@ -1,61 +1,71 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-.imagePrincipale{
-    /* background-size: cover; */
-    width: 100%;
-    border: 2px solid red;
-
-}
-
-h1{
-    text-align: center;
-    color: blue;
-}
-
-h2{
-    text-align: center;
-    color: gold;
-}
-
-nav{
-    overflow: hidden;
-    width: 100%;
-}
-
-header li{
-    text-decoration: none;
-    float: right;
-    padding: 15px;
-    margin: 5px;
-    background-color: burlywood;
-    border-radius: 10px;
-    display: block;
-}
-
-header li a{
-    text-decoration: none;
-    display: block;
-
-}
-
-li{
-    list-style-type: none;
-}
-
-#scoll_to_top{
+/* Barre de navigation */
+header {
     position: fixed;
-    width: 25px;
-    bottom: 50px;
-    right: 30px;
-}
-
-#scoll_to_top img{
-    width: 25px;
-}
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #333;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Sections */
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+  
+  #accueil {
+    background-color: #f1c40f;
+  }
+  
+  #services {
+    background-color: #3498db;
+  }
+  
+  #projets {
+    background-color: #e74c3c;
+  }
+  
+  #a-propos {
+    background-color: #2ecc71;
+  }
+  
+  #contact {
+    background-color: #9b59b6;
+  }
+  
+  /* Responsive */
+  @media only screen and (max-width: 768px) {
+    nav {
+      justify-content: center;
+    }
+  
+    li {
+      margin: 
+  
