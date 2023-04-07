@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Responsive</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"> <!-- liaison css -->
+
+<script defer src="index.js"></script> <!-- liaison js -->
+
+
 
 </head>
 <body>
@@ -25,15 +29,20 @@
         <a class="icon" onclick="myFunction()">&#9776;</a>
     </header>
 
-    <h1>Votre siteweb de A à Z à petit prix</h1>
+        <h1>Votre siteweb de A à Z à petit prix</h1>
 
     <section id="accueil">
         <h2>Bienvenue chez Moi</h2>
         <h3>Enfin un service qui s'adapte à vos besoins.</h3>
-        <br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br>
+        <p>Choisir Moi pour votre site internet, c'est avoir un site internet personnalisable qui s'ofrre à toute les bourses.
+        Que vous soyez un indépendant, une association, une PME et ce dans n'importe quel domaine d'activité, Moi s'adresse à toute personne et entreprise qui souhaite améliorer sa visibilté sur Internet.</p>
+        <br><br><br><br>
+        <div>
+            <span id="text-initial">Ceci est mon texte, c'est un texte long mais si vous cliquez sur </span>
+            <span id="text-hidden" class="hidden"> 1 la suite du texte vas etre visible sur le navigateur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit sit illo optio magni, amet voluptates accusamus quam hic commodi porro doloribus doloremque assumenda fugiat obcaecati ea excepturi sed libero voluptas nisi nam dicta magnam quibusdam. Pariatur laudantium quas molestiae consectetur magni odio quidem optio voluptas ut suscipit. Eum rerum quibusdam quod dignissimos, totam libero dolorum non distinctio ducimus numquam ea? Eius qui deleniti ipsa nulla ducimus dignissimos, eaque illo sit officia accusamus, doloremque possimus beatae aperiam ullam sed iure ab nam doloribus suscipit sunt veniam voluptates ut voluptas alias! Labore voluptates quisquam repellendus maiores assumenda ipsa reiciendis expedita. Nam. web.</span>
+            <span id="show" class="clickable" onclick="javascript:showMoreOrLess()">show more</span>
+        </div>
+        <br><br><br><br>
 
     </section>
 
@@ -42,10 +51,13 @@
         <h3>Enfin un service qui s'adapte à vos moyens.</h3>
         <p>Avec plusieurs formules, 
         Pour un prix de départ à ... €, vous aurez une visité internet à petit prix</p>
-        <br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+        <div>
+            <span id="text-initial">Ceci est mon texte, c'est un texte long mais si vous cliquez sur </span>
+            <span id="text-hidden" class="hidden">2 la suite du texte vas etre visible sur le navigateur  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe distinctio sit aut illum laboriosam libero quasi, alias, necessitatibus nesciunt optio, quas vitae. Deleniti, dolorum, sapiente exercitationem tenetur doloribus animi hic quaerat impedit quos sed assumenda est eum repudiandae corrupti? Unde deleniti voluptatum esse enim ducimus voluptatibus delectus et, eos tenetur. web.</span>
+            <span id="show" class="clickable" onclick="javascript:showMoreOrLess()">show more</span>
+        </div>
+        <br><br><br><br>
 
     </section>
 
@@ -53,8 +65,18 @@
         <h2>Mon parcours professionnel</h2>
         <h3>Mes début avec les dessins et l'animation 3d</h3>
         <p>Depuis tout petit, j'ai toujours aimé dessiner, </p>
-        <br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
+        <div>
+            <span id="text-initial">Ceci est mon texte, c'est un texte long mais si vous cliquez sur </span>
+            <span id="text-hidden" class="hidden"> 3 la suite du texte vas etre visible sur le navigateur Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae corporis velit iusto harum eligendi magni placeat dicta non enim dolores sed asperiores est optio reiciendis, laboriosam nemo molestias necessitatibus quae? Porro sint accusamus neque consectetur molestiae dolorem beatae quibusdam culpa praesentium amet quisquam est doloribus suscipit eius quis delectus quod adipisci vero cumque quia, quas sit earum officia. Est architecto ipsa consequuntur commodi non rem modi fugiat itaque quam impedit, vero, corrupti sequi sit molestiae voluptatibus magni doloremque nobis dignissimos iusto deserunt? Molestiae tempora a sapiente. Magnam laboriosam maxime tenetur doloribus, nam aperiam corporis tempore natus distinctio ducimus molestias ipsum praesentium facere dolores illum hic odio facilis amet? Placeat nulla atque blanditiis, assumenda voluptatum expedita quibusdam sapiente fugit odio. web.</span>
+            <span id="show" class="clickable" onclick="javascript:showMoreOrLess()">show more</span>
+        </div>
+        <br><br><br>
+        <p> <span id="text-initial">Ceci est mon texte, c'est un texte longmais si vous cliquez sur</span> 
+            <span id="text-hidden" class="hidden">la suite du texte va être visible en entier est sera donc plus compréhensible.</span>
+            <span id="show" class="clickable" onclick="jevascript:showMoreOrLess()">show more</span>
+        
+        </p>
       
 
     </section>
@@ -63,11 +85,7 @@
         <a href="#top"><img src="img/icon Home.png" alt="haut de page"></a>
     </div>
 
-    <!-- Fin page web -->
-
-    <!-- JavaScript -->
-
-    <script>
+    <!-- <script>
         function myFunction() {
             var x = document.getElementById("navbar");
             if (x.className === "nav") {
@@ -76,7 +94,7 @@
                 x.className = "nav";
             }
         }
-    </script>
+    </script> -->
     
 </body>
 </html>
