@@ -79,6 +79,49 @@ p{
     color: rgb(33, 43, 22);
 }
 
+/* CONFIGURATION texte rétractable */
+/* 1 */
+.hidden1{
+    display : none;
+}
+
+.clickable1:hover{
+ cursor : pointer;
+}       
+
+#show1{
+    text-decoration: underline;
+    color : cornflowerblue
+}
+
+/* 2 */
+.hidden2{
+    display : none;
+}
+
+.clickable2:hover{
+ cursor : pointer;
+}       
+
+#show2{
+    text-decoration: underline;
+    color : cornflowerblue
+}
+
+/* 3 */
+.hidden3{
+    display : none;
+}
+
+.clickable3:hover{
+ cursor : pointer;
+}       
+
+#show3{
+    text-decoration: underline;
+    color : cornflowerblue
+}
+
 
 /* icone retour haut de page */
 #scroll_to_top{
@@ -94,18 +137,9 @@ p{
 
 /* FIN Partie Principale */
 
-.hidden{
-    display : none;
-}
 
-.clickable:hover{
- cursor : pointer;
-}       
+/*  */
 
-#show{
-    text-decoration: underline;
-    color : cornflowerblue
-}
 
 /* CONFIGURATION mode responsive */
 
