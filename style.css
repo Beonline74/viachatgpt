@@ -1,12 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-}
-
-html{
-    scroll-behavior: smooth;
 }
 
 header{
@@ -64,6 +64,8 @@ header .icon{
     display: none;
 }
 
+/* CONFIGURATION Partie Principale */
+
 h1, h2, h3, h4{
     text-align: center;
     background-color: aquamarine;
@@ -78,7 +80,7 @@ p{
 }
 
 
-
+/* icone retour haut de page */
 #scroll_to_top{
     position: fixed;
     width: 25px;
@@ -90,9 +92,22 @@ p{
     width: 25px;
 }
 
-/* Fin page web */
+/* FIN Partie Principale */
 
-/* Configuration mode responsive */
+.hidden{
+    display : none;
+}
+
+.clickable:hover{
+ cursor : pointer;
+}       
+
+#show{
+    text-decoration: underline;
+    color : cornflowerblue
+}
+
+/* CONFIGURATION mode responsive */
 
 @media (max-width: 600px){
     header > a,
@@ -156,5 +171,6 @@ p{
         box-sizing: border-box;
         color: black; */
     }
-
 }
+
+/* FIN configurations mode responsive */
