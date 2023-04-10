@@ -10,12 +10,17 @@
 
 </head>
 <body>
-    <header>
+    <header id="navbar" class="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#infos">Infos</a>
+
+    <!-- <header>
         <nav class="navbar">
             <div class="logo">
                 <a href="#">Be online</a>
             </div>
-            <div class="onglets">
+            <div class="onglets"> -->
                 <a href="#accueil">Home</a>
                 <a href="#tarifs">Prices</a>
                 <a href="#infos">Infos</a>
@@ -24,6 +29,8 @@
                 <option value="../../index.html">Français</option>
                 <option value="../../lang/de/index-de.html">Deutsch</option>
             </select>
+        <a class="icon" onclick="myFunction()">&#9776;</a>
+
         </nav>
 
     <div class="principale">
@@ -34,6 +41,31 @@
 
 
     </header>
+
+    <footer class="basDePage">
+        <div class="copyrightGauche">
+            <h5>&copy; Tout droits réservés 2023</h5>
+        </div>
+        <div class="développerPar">
+            <h5>développer par Be Online <br>
+            Contact: .....</h5>
+    
+        </div>
+    
+    
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+
     
 </body>
 </html>
