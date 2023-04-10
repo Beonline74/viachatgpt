@@ -1,141 +1,38 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Responsive</title>
-
-<link rel="stylesheet" href="style.css"> <!-- liaison css -->
-
-<script defer src="index.js"></script> <!-- liaison js -->
-
-
+    <title>fr-html</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <header id="navbar" class="nav">
-        <a href="#accueil">Accueil</a>
-        <a href="#tarifs">Tarifs</a>
-        <!-- <div class="dropdown-1">
-            <button>Onglet3</button>
-            <div class="content">
-                <a href="#">Sous onglet1</a>
-                <a href="#">Sous onglet2</a>
-                <a href="#">Sous onglet3</a>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Be online</a>
             </div>
-        </div> -->
-        <a href="#aPropos">A propos</a>
-        <a href="#recrutement">Recrutements</a>
-        <a class="icon" onclick="myFunction()">&#9776;</a>
-    </header>
+            <div class="onglets">
+                <a href="#accueil">Accueil</a>
+                <a href="#tarifs">Tarifs</a>
+                <a href="#infos">Infos</a>
+            <select onchange="window.location.href=this.value"class="lang">
+                <option value="index.html">Français</option>
+                <option value="lang/en/index-en.html">English</option>
+                <option value="lang/de/index-de.html">Deutsch</option>
+            </select>
+        </nav>
 
-        <h1>Votre siteweb de A à Z à petit prix</h1>
-
-    <section id="accueil">
-        <h2>Bienvenue chez Moi</h2>
-        <h3>Enfin un service qui s'adapte à vos besoins.</h3>
-        <p>Choisir Moi pour votre site internet, c'est avoir un site internet personnalisable qui s'ofrre à toute les bourses.
-        Que vous soyez un indépendant, une association, une PME et ce dans n'importe quel domaine d'activité, Moi s'adresse à toute personne et entreprise qui souhaite améliorer sa visibilté sur Internet.</p>
-        <br><br><br><br>
-        <div>
-            <span id="text-initial1">Ceci est mon texte, c'est un texte long mais si vous cliquez sur </span>
-            <span id="text-hidden1" class="hidden1"> 1 la suite du texte vas etre visible sur le navigateur Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit sit illo optio magni, amet voluptates accusamus quam hic commodi porro doloribus doloremque assumenda fugiat obcaecati ea excepturi sed libero voluptas nisi nam dicta magnam quibusdam. Pariatur laudantium quas molestiae consectetur magni odio quidem optio voluptas ut suscipit. Eum rerum quibusdam quod dignissimos, totam libero dolorum non distinctio ducimus numquam ea? Eius qui deleniti ipsa nulla ducimus dignissimos, eaque illo sit officia accusamus, doloremque possimus beatae aperiam ullam sed iure ab nam doloribus suscipit sunt veniam voluptates ut voluptas alias! Labore voluptates quisquam repellendus maiores assumenda ipsa reiciendis expedita. Nam. web.</span>
-            <span id="show1" class="clickable1" onclick="javascript:showMoreOrLess1()">show more1</span>
+        <div class="principale">
+            <h1>Votre site internet personnalisé de A à Z <br> 
+            à petit prix</h1>
+            <h2>avec Be-Online</h2>
         </div>
-        <br><br><br><br>
-    </section>
 
-    <section>
-        <h3>Photo par zone cliquable</h3>
-        <p>Vous êtes plutôt village ou montagne?<br>
-        cliquer sur la partie qui vous intéresse.</p> 
-
-        <img usemap="#paysage_map" src="img/Screen Shot 2023-02-23 at 16.22.54.png" alt="image montagne" width="100%">
-
-        <map name="paysage_map">
-            <area shape="rect" coords="130, 50, 1000, 300" href="https://fr.wikipedia.org/wiki/Montagne" target="_blank" alt="Grange" title="Séjour en montagne"/>
-
-        <map name="paysage_map">
-            <area shape="rect" coords="20, 400, 1000, 630" href="https://fr.wikipedia.org/wiki/Grange" target="_blank" alt="Grange" title="Séjour au village"/>
-
-    </section>
-
-    <section id="tarifs">
-        <h2>Votre siteweb à petit prix</h2>
-        <h3>Enfin un service qui s'adapte à vos moyens.</h3>
-        <p>Avec plusieurs formules, 
-        Pour un prix de départ à ... €, vous aurez une visité internet à petit prix</p>
-        <br><br><br><br>
-        <div>
-            <span id="text-initial2">Ceci est mon texte, c'est un texte long mais si vous cliquez sur </span>
-            <span id="text-hidden2" class="hidden2">2 la suite du texte vas etre visible sur le navigateur  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe distinctio sit aut illum laboriosam libero quasi, alias, necessitatibus nesciunt optio, quas vitae. Deleniti, dolorum, sapiente exercitationem tenetur doloribus animi hic quaerat impedit quos sed assumenda est eum repudiandae corrupti? Unde deleniti voluptatum esse enim ducimus voluptatibus delectus et, eos tenetur. web.</span>
-            <span id="show2" class="clickable2" onclick="javascript:showMoreOrLess2()">show more2</span>
-        </div>
-        <br><br><br><br>
-
-    </section>
-
-    <section id="aPropos">
-        <h2>Mon parcours professionnel</h2>
-        <h3>Mes début avec les dessins et l'animation 3d</h3>
-        <p>Depuis tout petit, j'ai toujours aimé dessiner, </p>
-        <br><br><br><br>
-        <div>
-            <span id="text-initial3">Ceci est mon texte, c'est un texte long mais si vous cliquez sur </span>
-            <span id="text-hidden3" class="hidden3"> 3 la suite du texte vas etre visible sur le navigateur Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi recusandae corporis velit iusto harum eligendi magni placeat dicta non enim dolores sed asperiores est optio reiciendis, laboriosam nemo molestias necessitatibus quae? Porro sint accusamus neque consectetur molestiae dolorem beatae quibusdam culpa praesentium amet quisquam est doloribus suscipit eius quis delectus quod adipisci vero cumque quia, quas sit earum officia. Est architecto ipsa consequuntur commodi non rem modi fugiat itaque quam impedit, vero, corrupti sequi sit molestiae voluptatibus magni doloremque nobis dignissimos iusto deserunt? Molestiae tempora a sapiente. Magnam laboriosam maxime tenetur doloribus, nam aperiam corporis tempore natus distinctio ducimus molestias ipsum praesentium facere dolores illum hic odio facilis amet? Placeat nulla atque blanditiis, assumenda voluptatum expedita quibusdam sapiente fugit odio. web.</span>
-            <span id="show3" class="clickable3" onclick="javascript:showMoreOrLess3()">show more3</span>
-        </div>
-        <br><br><br>
-        <p> <span id="text-initial">Ceci est mon texte, c'est un texte longmais si vous cliquez sur</span> 
-            <span id="text-hidden" class="hidden">la suite du texte va être visible en entier est sera donc plus compréhensible.</span>
-            <span id="show" class="clickable" onclick="jevascript:showMoreOrLess()">show more</span>
-        
-        </p>
-    </section>
-
-    <p>Nous trouver</p>
-    <br>
-    <br>
-    <br>
-    <!-- <p>Vue du ciel</p> -->
-    
-    <!-- carte Google map -->
-    <iframe 
-    
-    
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937586!2d2.2922926156743895!3d48.858370079287475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1675506984874!5m2!1sen!2sfr" width="200vw" heght="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-    <!-- <p>Vue du sol</p> -->
-    
-    <!-- vue Google street -->
-    <iframe 
-    
-    
-    src="https://www.google.com/maps/embed?pb=!4v1675507358904!6m8!1m7!1ssQlxRV9xQVbB_FuLnlKu3Q!2m2!1d48.85377364594432!2d2.294177473623492!3f344.8565409874603!4f24.087473182934048!5f0.7820865974627469" width="200vw" heght="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <section id="recrutement">
-        <h2>Recrutements</h2>
-        <h3>Que vous recherchiez un poste comme stagiaires ou salarié, <br>
-        il y a peut être un poste pour vous.</h3>
-        <p>Aucun poste de stagiaire pour le moment n'est à pourvoir</p>
-        <p>Aucun poste de salarié pour le moment n'est à pourvoir.</p>
-    </section>
-
-    <div id="scroll_to_top">
-        <a href="#top"><img src="img/icon Home.png" alt="haut de page"></a>
-    </div>
-
-    <!-- <script>
-        function myFunction() {
-            var x = document.getElementById("navbar");
-            if (x.className === "nav") {
-                x.className += " responsive";
-            } else {
-                x.className = "nav";
-            }
-        }
-    </script> -->
+   
+   
     
 </body>
 </html>
