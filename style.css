@@ -8,6 +8,10 @@ html{
     text-decoration: none;
 }
 
+body{
+    background-color: aqua;
+}
+
 header .navbar{
     display: flex;
     flex-wrap: wrap;
@@ -40,3 +44,36 @@ header nav a:hover{
 header{
     text-align: center;
 }
+
+h3{
+    text-align: center;
+}
+
+p{
+    margin: 0 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 5%;
+    font-size: 1.2em;
+    /* border: 2px solid blue; */
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+
+
+
+
+.basDePage{
+    height: 50px;
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 8%;
+    justify-content: space-between;
+}
+
+h5{
+    font-size: 1.1em;
+}
+
