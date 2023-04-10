@@ -1,72 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fr-html</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Navbar Responsive</title>
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">Be online</a>
+    <header id="navbar" class="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#infos">Infos</a>
+        <select onchange="window.location.href=this.value"class="lang">
+            <option value="index.html">Français</option>
+            <option value="lang/en/index-en.html">English</option>
+            <option value="lang/de/index-de.html">Deutsch</option>
+        </select>
+        <!-- <div class="dropdown-1">
+            <button>Onglet3</button>
+            <div class="content">
+                <a href="#">Sous onglet1</a>
+                <a href="#">Sous onglet2</a>
+                <a href="#">Sous onglet3</a>
             </div>
-            <div class="onglets">
-                <a href="#accueil">Accueil</a>
-                <a href="#tarifs">Tarifs</a>
-                <a href="#infos">Infos</a>
-            <select onchange="window.location.href=this.value"class="lang">
-                <option value="index.html">Français</option>
-                <option value="lang/en/index-en.html">English</option>
-                <option value="lang/de/index-de.html">Deutsch</option>
-            </select>
-        </nav>
-
-        <div id="principale">
-            <h1>Votre site internet personnalisé de A à Z <br> 
-            à petit prix</h1>
-            <h2>avec Be-Online</h2>
-        </div>
+        </div> 
+        <a href="#">Onglet4</a>-->
+        <a class="icon" onclick="myFunction()">&#9776;</a>
     </header>
 
-
-    <section id="accueil">
-        <h3>Pourquoi choisir Be Online?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? Fuga voluptatem animi velit unde neque Fuga voluptatem animi velit unde neque deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? Fuga voluptatem animi velit unde neque Fuga voluptatem animi velit unde neque.</p>
-
-    </section>
-
-       <section id="tarifs">
-        <h3>Les différentes formules qu'offre Bo Online</h3>
-        <p>Pour se rapprocher au plus près des besoins de chacun, Be Online vous propose différentes formules qui, à partir d'une bases simple et accéssible à toutes les bourses à laquelle chacun peut y ajouter différentes options. Ainis, vous métriser votre budjet en ayant un outil qui permet d'être vu sur internet. <br><br> 
-        odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? Fuga voluptatem animi velit unde neque Fuga voluptatem animi velit unde neque deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? Fuga voluptatem animi velit unde neque Fuga voluptatem animi velit unde neque</p>
-
-    </section>
-
-    <section id="infos">
-        <h3>Mon parcours</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, temporibus, alias, dolores hic aperiam animi necessitatibus similique voluptate optio explicabo iure doloremque! Minus eaque aut qui commodi libero dolore hic ut eligendi quos id magnam ipsum nisi adipisci dolor, Vel, temporibus, alias, dolores hic aperiam animi necessitatibus similique voluptate optio explicabo iure doloremque! Minus eaque aut qui commodi libero dolore hic ut eligendi quos id magnam ipsum nisi adipisci dolor, consectetur quia alias nulla culpa eveniet accusantium veniam. Repellat pariatur necessitatibus ratione blanditiis, maiores error possimus, vitae, nisi magnam mollitia iusto ducimus aperiam voluptatibus. Nobis atque voluptatum culpa dolores iusto adipisci qui porro labore libero ullam modi enim, ad sequi dicta ut, nihil, odio ipsam. Esse distinctio, dolore iusto voluptatibus maiores dicta officia nemo repellendus praesentium ratione sint ipsum quidem exercitationem consectetur quia alias nulla culpa eveniet accusantium veniam. Repellat pariatur necessitatibus ratione blanditiis, maiores error possimus, vitae, nisi magnam mollitia iusto ducimus aperiam voluptatibus. Nobis atque voluptatum culpa dolores iusto adipisci qui porro labore libero ullam modi enim, ad sequi dicta ut, nihil, odio ipsam. Esse distinctio, dolore iusto voluptatibus maiores dicta officia nemo repellendus praesentium ratione sint ipsum quidem exercitationem.</p>
-
-    </section>
-
-    <footer class="basDePage">
-        <div class="copyrightGauche">
-            <h5>&copy; Tout droits réservés 2023</h5>
-        </div>
-        <div class="développerPar">
-            <h5>développer par Be Online <br>
-            Contact: .....</h5>
-
-        </div>
+    <!-- <div id="principale">
+        <h1>Votre site internet personnalisé de A à Z <br> 
+        à petit prix</h1>
+        <h2>avec Be-Online</h2>
+    </div>
+</header> -->
 
 
-    </footer>
+<section id="accueil">
+    <h3>Pourquoi choisir Be Online?</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? Fuga voluptatem animi velit unde neque Fuga voluptatem animi velit unde neque deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? Fuga voluptatem animi velit unde neque Fuga voluptatem animi velit unde neque.</p>
 
-   
-   
+</section>
+
+   <section id="tarifs">
+    <h3>Les différentes formules qu'offre Bo Online</h3>
+    <p>Pour se rapprocher au plus près des besoins de chacun, Be Online vous propose différentes formules qui, à partir d'une bases simple et accéssible à toutes les bourses à laquelle chacun peut y ajouter différentes options. Ainis, vous métriser votre budjet en ayant un outil qui permet d'être vu sur internet. <br><br> 
+    odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit accusamus deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? Fuga voluptatem animi velit unde neque Fuga voluptatem animi velit unde neque deserunt odio. Asperiores veniam incidunt atque dolorum, aspernatur aperiam molestiae beatae numquam in natus odio nisi explicabo eaque aut nesciunt sed fuga nemo? Fuga voluptatem animi velit unde neque Fuga voluptatem animi velit unde neque</p>
+
+</section>
+
+<section id="infos">
+    <h3>Mon parcours</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, temporibus, alias, dolores hic aperiam animi necessitatibus similique voluptate optio explicabo iure doloremque! Minus eaque aut qui commodi libero dolore hic ut eligendi quos id magnam ipsum nisi adipisci dolor, Vel, temporibus, alias, dolores hic aperiam animi necessitatibus similique voluptate optio explicabo iure doloremque! Minus eaque aut qui commodi libero dolore hic ut eligendi quos id magnam ipsum nisi adipisci dolor, consectetur quia alias nulla culpa eveniet accusantium veniam. Repellat pariatur necessitatibus ratione blanditiis, maiores error possimus, vitae, nisi magnam mollitia iusto ducimus aperiam voluptatibus. Nobis atque voluptatum culpa dolores iusto adipisci qui porro labore libero ullam modi enim, ad sequi dicta ut, nihil, odio ipsam. Esse distinctio, dolore iusto voluptatibus maiores dicta officia nemo repellendus praesentium ratione sint ipsum quidem exercitationem consectetur quia alias nulla culpa eveniet accusantium veniam. Repellat pariatur necessitatibus ratione blanditiis, maiores error possimus, vitae, nisi magnam mollitia iusto ducimus aperiam voluptatibus. Nobis atque voluptatum culpa dolores iusto adipisci qui porro labore libero ullam modi enim, ad sequi dicta ut, nihil, odio ipsam. Esse distinctio, dolore iusto voluptatibus maiores dicta officia nemo repellendus praesentium ratione sint ipsum quidem exercitationem.</p>
+
+</section>
+
+<footer class="basDePage">
+    <div class="copyrightGauche">
+        <h5>&copy; Tout droits réservés 2023</h5>
+    </div>
+    <div class="développerPar">
+        <h5>développer par Be Online <br>
+        Contact: .....</h5>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- Mode Responsive Navbar -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
     
 </body>
 </html>
