@@ -42,7 +42,24 @@ p{
     background-color: burlywood;
 }
 
+h6{
+    font-size: 1.2em;
+}
 
+#lesTarifs{
+    text-align: center;
+    border: 2px solid green;
+    display: flex;
+    margin: 0 10%;
+}
+
+.formule{
+    text-align: center;
+    border: 3px solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
 
 
 
