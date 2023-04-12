@@ -26,58 +26,7 @@ header button{
     font-size: 1.3em;
 }
 
-h1, h2, h3{
-    text-align: center;
-    color: darkgoldenrod;
-}
-
-p{
-    margin: 0 20%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px 5%;
-    font-size: 1.2em;
-    /* border: 2px solid blue; */
-    border-radius: 10px;
-    background-color: burlywood;
-}
-
-h6{
-    font-size: 1.2em;
-}
-
-#lesTarifs{
-    text-align: center;
-    border: 2px solid green;
-    display: flex;
-    margin: 0 8%;
-}
-
-.formule{
-    text-align: center;
-    background-color: rgb(134, 134, 128);
-    border: 3px solid gold;
-    border-radius: 10px;
-    padding: 5px 1%;
-    margin: 5px 1%;
-}
-
-
-
-.basDePage{
-    height: 50px;
-    background-color: cadetblue;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 8%;
-    justify-content: space-between;
-}
-
-h5{
-    font-size: 1.1em;
-}
-
-/* header button{
+header button{
     background-color: transparent;
     border: none;
     outline: none;
@@ -109,7 +58,7 @@ header .dropdown-1:hover .content{
 
 header .content a{
     color: black;
-} */
+}
 
 header .icon{
     display: none;
@@ -177,11 +126,116 @@ header .icon{
         box-sizing: border-box;
         color: black; */
     }
+}
 
-    
+h1, h2, h3{
+    text-align: center;
+    color: darkgoldenrod;
+}
 
- 
-    
-   
+p{
+    margin: 0 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 5%;
+    font-size: 1.2em;
+    /* border: 2px solid blue; */
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+.prestations{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    background-color: cadetblue;
+
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 20%;
 
 }
+
+.imagesPrestation{
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid green;
+}
+
+.imagesPrestation p{
+    padding: 5px;
+    background-color: rgb(152, 95, 160);
+
+}
+    
+
+
+
+.sectionDivisée{
+ 
+    border: 2px solid green;
+    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+
+}
+
+.division{
+    border: 2px solid rgb(0, 68, 128);
+    text-align: center;
+    width: 20%;
+    margin: 5px auto;
+    padding: 10px;
+
+
+}
+
+/*  */
+
+.sectionPrixEtInfos{
+    border: 1px solid rgb(91, 103, 3);
+    background-color: lightblue;
+    /* padding: 10px auto; */
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.prix{
+    border: 1px solid blue;
+    background-color: white;
+    margin: 10px 5%;
+    padding: 10px 2%;
+}
+
+.cellules{
+    display: flex;
+    margin: 10px 5%;
+    padding: 10px 5%;
+}
+
+.cellules .prix p{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+    background-color: rgb(252, 111, 111);
+    color: white;
+    padding: 10px 10%;
+}
+
+/* incon retour haut de page */
+#scroll_to_top{
+    position: fixed;
+    width: 25px;
+    bottom: 90px;
+    right: 30px;
+}
+
+#scroll_to_top img{
+    width: 25px;
+}
+
+/*  */
