@@ -133,6 +133,24 @@ header .icon{
     background-color: burlywood;
 }
 
+#catégorie h3{
+    text-align: center;
+    color: rgb(214, 213, 213);
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+#catégorie p{
+    margin: 0 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 5%;
+    font-size: 1.2em;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
 #tarifs h3{
     text-align: center;
     color: rgb(214, 213, 213);
