@@ -55,6 +55,7 @@ header .icon{
         width: 5% !important;
         top: 20px;
         padding: 0 !important;
+        /* transform: translateY(-50%); */
         cursor: pointer;
     }
 
@@ -64,9 +65,12 @@ header .icon{
     }
 
 
-    header.responsive > a,{
+    header.responsive > a,
+    header.responsive .dropdown-1{
         display: block;
+        /* padding: 10px 0; */
         width: 100%;
+        /* text-align: left; */
     }
 
     header.responsive button{
