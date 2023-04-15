@@ -2,13 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    height: 100%;
-    background-image: linear-gradient(to bottom , #ffd89b, #19547b);
-    background-image: radial-gradient( #ffd89b, #19547b); 
-    background-image: radial-gradient(circle at 0% 100% , #ffd89b, #19547b);
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +9,18 @@ body{
     text-decoration: none;
 }
 
+/* couleur fond d'écran */
+
+body{
+    height: 100%;
+    background-image: linear-gradient(to bottom , #ffd89b, #19547b);
+    background-image: radial-gradient( #ffd89b, #19547b); 
+    background-image: radial-gradient(circle at 0% 100% , #ffd89b, #19547b);
+}
+
+/* FIN couleur fond d'écran */
+
+/* Navbar */
 header{
     width: 100%;
     height: 70px;
@@ -26,45 +31,10 @@ header{
     flex-direction: row;
 }
 
-header > a,
-header button{
+header > a{
     color: white;
     margin: 0 15px;
     font-size: 1.3em;
-}
-
-header button{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-header .dropdown-1{
-    position: relative;
-    height: 100%;
-    display: flex;
-}
-
-header .dropdown-1 .content{
-    display: none;
-}
-
-header .dropdown-1:hover .content{
-    display: block;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: white;
-    top: 70px;
-    width: 120%;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    color: black;
-}
-
-header .content a{
-    color: black;
 }
 
 header .icon{
@@ -85,7 +55,6 @@ header .icon{
         width: 5% !important;
         top: 20px;
         padding: 0 !important;
-        /* transform: translateY(-50%); */
         cursor: pointer;
     }
 
@@ -95,12 +64,9 @@ header .icon{
     }
 
 
-    header.responsive > a,
-    header.responsive .dropdown-1{
+    header.responsive > a,{
         display: block;
-        /* padding: 10px 0; */
         width: 100%;
-        /* text-align: left; */
     }
 
     header.responsive button{
@@ -135,113 +101,115 @@ header .icon{
     }
 }
 
-h1, h2{
+/* FIN Navbar */
+
+ .principale h1, h2{
     text-align: center;
     color: rgb(214, 213, 213);
     color: rgb(218, 204, 56);
 
     padding: 10px 0;
-}
+} 
 
-h3{
+#accueil h3{
     text-align: center;
     color: rgb(214, 213, 213);
     padding: 10px 0;
     font-size: 1.5em;
 }
 
-p{
+#accueil p{
     margin: 0 20%;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px 5%;
     font-size: 1.2em;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     border-radius: 10px;
     background-color: burlywood;
 }
 
+#tarifs h3{
+    text-align: center;
+    color: rgb(214, 213, 213);
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+#tarifs p{
+    margin: 0 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 5%;
+    font-size: 1.2em;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+
+/* partie "étiquettes" x 3 */
 .prestations{
+    order: 2px solid green;
+    background-color: rgb(25, 0, 255);
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 20px;
-    background-color: cadetblue;
-
-    border: 2px solid green;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 20%;
-
+    padding: 20px 5%;
 }
 
 .imagesPrestation{
-    padding: 15px;
-    margin: 15px;
-    border: 2px solid green;
+    order: 2px solid green;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+.imagesPrestation h4{
+    font-weight: bold;
+    color: darkgrey;
+    order: 2px solid green;
+    background-color: rgb(129, 0, 0);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+
 }
 
 .imagesPrestation p{
-    padding: 5px;
-    background-color: rgb(152, 95, 160);
-
-}
-    
-
-
-
-.sectionDivisée{
- 
-    border: 2px solid green;
-    text-align: center;
-    width: 80%;
-    margin: 5px auto;
-
-}
-
-.division{
-    border: 2px solid rgb(0, 68, 128);
-    text-align: center;
-    width: 20%;
-    margin: 5px auto;
-    padding: 10px;
-
-
-}
-
-/*  */
-
-.sectionPrixEtInfos{
-    border: 1px solid rgb(91, 103, 3);
-    background-color: lightblue;
-    /* padding: 10px auto; */
-    padding-left: auto;
-    padding-right: auto;
-}
-
-.prix{
-    border: 1px solid blue;
-    background-color: white;
-    margin: 10px 5%;
-    padding: 10px 2%;
-}
-
-.cellules{
-    display: flex;
-    margin: 10px 5%;
-    padding: 10px 5%;
-}
-
-.cellules .prix p{
-    text-align: center;
-}
-
-h5{
-    text-align: center;
-    background-color: rgb(252, 111, 111);
+    order: 2px solid green;
+    border-radius: 10px;
+    background-color: rgb(129, 0, 0);
     color: white;
-    padding: 10px 10%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
 }
+
+/* FIN partie "étiquettes" x 3 */
+
+#infos h3{
+    text-align: center;
+    color: rgb(214, 213, 213);
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+#infos p{
+    margin: 0 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 5%;
+    font-size: 1.2em;
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+
 
 /* incon retour haut de page */
 #scroll_to_top{
@@ -254,5 +222,11 @@ h5{
 #scroll_to_top img{
     width: 25px;
 }
+/* FIN incon retour haut de page */
 
-/*  */
+.basDePage{
+    text-align: center;
+    background-color: rgb(252, 111, 111);
+    color: white;
+    padding: 10px 10%;
+}
