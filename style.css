@@ -115,7 +115,7 @@ header .icon{
     padding: 10px 0;
 } 
 
-#accueil h3{
+#accueil h2{
     text-align: center;
     color: rgb(214, 213, 213);
     padding: 10px 0;
@@ -133,7 +133,7 @@ header .icon{
     background-color: burlywood;
 }
 
-#catégorie h3{
+#catégorie h2{
     text-align: center;
     color: rgb(214, 213, 213);
     padding: 10px 0;
@@ -151,7 +151,7 @@ header .icon{
     background-color: burlywood;
 }
 
-#tarifs h3{
+#tarifs h2{
     text-align: center;
     color: rgb(214, 213, 213);
     padding: 10px 0;
@@ -213,7 +213,7 @@ header .icon{
 
 /* FIN partie "étiquettes" x 3 */
 
-#infos h3{
+#infos h2{
     text-align: center;
     color: rgb(214, 213, 213);
     padding: 10px 0;
