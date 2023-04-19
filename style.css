@@ -41,6 +41,56 @@ header .icon{
     display: none;
 }
 
+#introPays{
+    position: absolute;
+    z-index: 99;
+    left: 25%;
+    top: 4%;
+    color: orangered;
+
+}
+
+.billets{
+    text-align: center;
+
+}
+
+.billets-img{
+    border-radius: 20px;
+    border: 5px green solid;
+}
+
+#contact-container {
+    background-color: white;
+    width: 100%;
+    margin-top : 50px;
+    padding: 20px;    
+    text-align: center;
+
+}
+
+#contact-title-container {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.contact-form{
+    width: 30%;
+    padding: 5px;
+    border : 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin: 5px;
+}
+
+#contact-form-textarea{
+    width: 70%;
+    height: 150px;
+}
+
+#contact-form-btn {
+    padding: 10px;
+}
+
 @media (max-width: 600px){
     header > a,
     header button{
